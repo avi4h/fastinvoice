@@ -34,13 +34,13 @@ export function Sidebar({
 
   return (
     <aside
-      className={`bg-gray-800 text-white transition-all duration-300 ${
+      className={`bg-gray-800 text-white transition-all duration-1000 ${
         sidebarOpen ? 'w-64' : 'w-16'
       }`}
     >
       <div className="flex flex-col h-full">
-        <div className="flex items-center justify-between p-4">
-          {sidebarOpen && <h2 className="text-xl font-bold">Invoice App</h2>}
+        <div className="flex items-center p-4">
+          {sidebarOpen && <h2 className="text-xl font-bold overflow-x-hidden text-nowrap mr-auto">Invoice App</h2>}
           <Button
             variant="ghost"
             size="icon"
